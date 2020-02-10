@@ -1,6 +1,9 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Login from "./pages/login";
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -12,12 +15,30 @@ function App() {
           place!
         </h4>
         <div className="mainMenu">
-          <button type="button" className="btn btn-outline-danger loginButton">
-            Log in
-          </button>
-          <button type="button" className="btn btn-danger registerButton">
-            Register
-          </button>
+          <Router>
+            <Link
+              type="button"
+              className="btn btn-outline-danger loginButton"
+              to="/login"
+            >
+              Log in
+            </Link>
+            <Link
+              type="button"
+              className="btn btn-danger registerButton"
+              to="/register"
+            >
+              Register
+            </Link>
+            <Switch>
+              <Route path="/login">
+                <Login />
+              </Route>
+              <Route path="/register">
+                <Register />
+              </Route>
+            </Switch>
+          </Router>
         </div>
       </div>
     </div>
