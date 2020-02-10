@@ -9,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <h1 className="title">Bug Tracker</h1>
-        <h4 className="subtitle">
+        <h1 className="title" id="mainTitle">
+          Bug Tracker
+        </h1>
+        <h4 className="subtitle" id="mainSubtitle">
           If you want best software for tracking bugs, you are on the good
           place!
         </h4>
@@ -18,6 +20,7 @@ function App() {
           <Router>
             <Link
               type="button"
+              id="loginButton"
               className="btn btn-outline-danger loginButton"
               to="/login"
             >
@@ -25,6 +28,7 @@ function App() {
             </Link>
             <Link
               type="button"
+              id="registerButton"
               className="btn btn-danger registerButton"
               to="/register"
             >

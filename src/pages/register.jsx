@@ -2,6 +2,8 @@ import React from "react";
 
 class Register extends React.Component {
   render() {
+    document.getElementById("mainTitle").style.visibility = "hidden";
+    document.getElementById("mainSubtitle").style.visibility = "hidden";
     return (
       <div className="registerComponent">
         <form className="form_register">

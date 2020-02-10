@@ -2,6 +2,8 @@ import React from "react";
 
 class Login extends React.Component {
   render() {
+    document.getElementById("mainTitle").style.visibility = "hidden";
+    document.getElementById("mainSubtitle").style.visibility = "hidden";
     return (
       <div className="loginComponent">
         <form className="form_login">
