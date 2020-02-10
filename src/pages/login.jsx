@@ -4,7 +4,7 @@ class Login extends React.Component {
   render() {
     return (
       <div className="loginComponent">
-        <form>
+        <form className="form_login">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input
@@ -25,7 +25,7 @@ class Login extends React.Component {
             />
           </div>
           <button type="submit" class="btn btn-primary">
-            Submit
+            Log in
           </button>
         </form>
       </div>

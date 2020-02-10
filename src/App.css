@@ -57,3 +57,39 @@ h4 {
 .btn {
   display: inline-block;
 }
+
+.loginComponent {
+  padding: 3%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: white;
+  display: table;
+  width: 60%;
+  border-style: solid;
+  border-color: red;
+  border-radius: 13px;
+}
+
+.form_login {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.registerComponent {
+  padding: 3%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: white;
+  display: table;
+  width: 60%;
+  border-style: solid;
+  border-color: red;
+  border-radius: 13px;
+}
+
+.form_register {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+}
